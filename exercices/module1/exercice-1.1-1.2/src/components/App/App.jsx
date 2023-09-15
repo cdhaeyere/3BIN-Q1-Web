@@ -1,6 +1,6 @@
-import Header from "@/components/Header/Header"
-import Content from "@/components/Content/Content"
-import Total from "@/components/Total/Total"
+import Header from "components/Header/Header"
+import Content from "components/Content/Content"
+import Total from "components/Total/Total"
 
 import "./App.css"
 import image from './test.png'
