@@ -2,6 +2,8 @@ import Header from "@/components/Header/Header"
 import Content from "@/components/Content/Content"
 import Total from "@/components/Total/Total"
 
+import "./App.css"
+
 const App = () => {
     const course = 'Half Stack application development'
     const part1 = 'Fundamentals of React'
