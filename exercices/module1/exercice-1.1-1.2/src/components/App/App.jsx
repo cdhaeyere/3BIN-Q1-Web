@@ -3,6 +3,7 @@ import Content from "@/components/Content/Content"
 import Total from "@/components/Total/Total"
 
 import "./App.css"
+import image from './test.png'
 
 const App = () => {
     const course = 'Half Stack application development'
@@ -21,6 +22,7 @@ const App = () => {
             <Header course={course} />
             <Content parts={parts} exercices={exercices} />
             <Total exercices={exercices} />
+            <img src={image} />
         </div>
     )
 }
