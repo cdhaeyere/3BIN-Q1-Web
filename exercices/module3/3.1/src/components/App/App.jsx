@@ -1,11 +1,17 @@
 import Button from 'components/Button/Button';
 import Statistics from 'components/Statistics/Statistics';
 import { useState } from 'react';
+import Loading from 'components/Loading/Loading';
 
 const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => setLoading(false), 3000);
+
+  if (loading) return <Loading />;
 
   const handleClick = (e) => {
     if (e.target.className === 'good') setGood(good + 1);
