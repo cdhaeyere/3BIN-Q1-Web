@@ -1,0 +1,9 @@
+@hostname = localhost
+@port = 3000
+@host = http://{{hostname}}:{{port}}
+
+###
+
+GET {{host}}/api/persons HTTP/1.1
+Accept: application/json
+X-USER-EMAIL: john.doe@acme.com

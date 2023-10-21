@@ -1,0 +1,39 @@
+@hostname = localhost
+@port = 3000
+@host = http://{{hostname}}:{{port}}
+
+###
+
+POST {{host}}/api/persons HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "",
+  "number": "12-34-567890123"
+}
+
+
+###
+
+POST {{host}}/api/persons HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "number": ""
+}
+
+
+###
+
+POST {{host}}/api/persons HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Arto Hellas",
+  "number": "99-99-9999"
+}
+
