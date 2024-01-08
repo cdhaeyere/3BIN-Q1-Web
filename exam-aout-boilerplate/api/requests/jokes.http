@@ -1,0 +1,22 @@
+### Get all jokes
+GET http://localhost:3001/jokes
+
+### Get a joke by id
+GET http://localhost:3001/jokes/658c59bb6061fc9976f222f6
+
+### Create a joke
+# @name create
+POST http://localhost:3001/jokes
+Content-Type: application/json
+
+{
+    "question": "What do you call a cow with no legs?",
+    "answer": "Ground beef",
+    "category": "animal"
+}
+
+### Update a joke by id
+@jokeId = {{ create.response.body.id }}
+
+### Delete a joke by id
+DELETE http://localhost:3001/jokes/{{ jokeId }}
